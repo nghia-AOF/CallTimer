@@ -1,0 +1,241 @@
+// !$*WG935846729487$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A10000012B00000000000001 /* CallTimerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000012B00000000000001 /* CallTimerApp.swift */; };
+		A10000022B00000000000002 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000022B00000000000002 /* ContentView.swift */; };
+		A10000032B00000000000003 /* TimerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000032B00000000000003 /* TimerManager.swift */; };
+		A10000042B00000000000004 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000042B00000000000004 /* NotificationManager.swift */; };
+		A10000052B00000000000005 /* CallTimerAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000052B00000000000005 /* CallTimerAttributes.swift */; };
+		A10000062B00000000000006 /* CallTimerWidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10000062B00000000000006 /* CallTimerWidgetLiveActivity.swift */; };
+		A10000072B00000000000007 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F10000072B00000000000007 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E10000012B00000000000001 /* CallTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CallTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F10000012B00000000000001 /* CallTimerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallTimerApp.swift; sourceTree = "<group>"; };
+		F10000022B00000000000002 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F10000032B00000000000003 /* TimerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerManager.swift; sourceTree = "<group>"; };
+		F10000042B00000000000004 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		F10000052B00000000000005 /* CallTimerAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallTimerAttributes.swift; sourceTree = "<group>"; };
+		F10000062B00000000000006 /* CallTimerWidgetLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallTimerWidgetLiveActivity.swift; sourceTree = "<group>"; };
+		F10000072B00000000000007 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F10000082B00000000000008 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B10000012B00000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C10000012B00000000000001 = {
+			isa = PBXGroup;
+			children = (
+				C10000022B00000000000002 /* CallTimer */,
+				C10000032B00000000000003 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C10000022B00000000000002 /* CallTimer */ = {
+			isa = PBXGroup;
+			children = (
+				F10000012B00000000000001 /* CallTimerApp.swift */,
+				F10000022B00000000000002 /* ContentView.swift */,
+				F10000032B00000000000003 /* TimerManager.swift */,
+				F10000042B00000000000004 /* NotificationManager.swift */,
+				F10000052B00000000000005 /* CallTimerAttributes.swift */,
+				F10000062B00000000000006 /* CallTimerWidgetLiveActivity.swift */,
+				F10000072B00000000000007 /* Assets.xcassets */,
+				F10000082B00000000000008 /* Info.plist */,
+			);
+			path = CallTimer;
+			sourceTree = "<group>";
+		};
+		C10000032B00000000000003 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E10000012B00000000000001 /* CallTimer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D10000012B00000000000001 /* CallTimer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = S10000012B00000000000001 /* Build configuration list for PBXNativeTarget "CallTimer" */;
+			buildPhases = (
+				P10000012B00000000000001 /* Sources */,
+				B10000012B00000000000001 /* Frameworks */,
+				R10000012B00000000000001 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CallTimer;
+			productName = CallTimer;
+			productReference = E10000012B00000000000001 /* CallTimer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		P00000012B00000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					D10000012B00000000000001 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = S00000012B00000000000001 /* Build configuration list for PBXProject "CallTimerApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = vi;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				vi,
+			);
+			mainGroup = C10000012B00000000000001;
+			productRefGroup = C10000032B00000000000003 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D10000012B00000000000001 /* CallTimer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		R10000012B00000000000001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10000072B00000000000007 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		P10000012B00000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10000012B00000000000001 /* CallTimerApp.swift in Sources */,
+				A10000022B00000000000002 /* ContentView.swift in Sources */,
+				A10000032B00000000000003 /* TimerManager.swift in Sources */,
+				A10000042B00000000000004 /* NotificationManager.swift in Sources */,
+				A10000052B00000000000005 /* CallTimerAttributes.swift in Sources */,
+				A10000062B00000000000006 /* CallTimerWidgetLiveActivity.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		BC0000012B00000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = CallTimer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.calltimer.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1";
+			};
+			name = Debug;
+		};
+		BC0000022B00000000000002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = CallTimer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.calltimer.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1";
+			};
+			name = Release;
+		};
+		BC0000032B00000000000003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		BC0000042B00000000000004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		S00000012B00000000000001 /* Build configuration list for PBXProject "CallTimerApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC0000032B00000000000003 /* Debug */,
+				BC0000042B00000000000004 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		S10000012B00000000000001 /* Build configuration list for PBXNativeTarget "CallTimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC0000012B00000000000001 /* Debug */,
+				BC0000022B00000000000002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = P00000012B00000000000001 /* Project object */;
+}
