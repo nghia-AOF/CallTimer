@@ -1,0 +1,47 @@
+# XcodeGen spec: `xcodegen generate` creates CallTimerApp.xcodeproj
+# (done automatically by GitHub Actions; on a Mac run `brew install xcodegen && xcodegen`).
+name: CallTimerApp
+options:
+  deploymentTarget:
+    iOS: "17.0"
+  developmentLanguage: vi
+settings:
+  base:
+    SWIFT_VERSION: "5.0"
+    MARKETING_VERSION: "1.1"
+    CURRENT_PROJECT_VERSION: "2"
+    TARGETED_DEVICE_FAMILY: "1"
+    CODE_SIGN_STYLE: Automatic
+targets:
+  CallTimer:
+    type: application
+    platform: iOS
+    sources:
+      - CallTimer
+      - Shared
+    settings:
+      base:
+        PRODUCT_NAME: CallTimer
+        PRODUCT_BUNDLE_IDENTIFIER: com.calltimer.app
+        INFOPLIST_FILE: CallTimer/Info.plist
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+    dependencies:
+      - target: CallTimerWidgetExtension
+        embed: true
+    scheme: {}
+  CallTimerWidgetExtension:
+    type: app-extension
+    platform: iOS
+    sources:
+      - CallTimerWidget
+      - Shared
+    settings:
+      base:
+        PRODUCT_NAME: CallTimerWidgetExtension
+        PRODUCT_BUNDLE_IDENTIFIER: com.calltimer.app.widget
+        INFOPLIST_FILE: CallTimerWidget/Info.plist
+        APPLICATION_EXTENSION_API_ONLY: YES
+        SKIP_INSTALL: YES
+    dependencies:
+      - sdk: SwiftUI.framework
+      - sdk: WidgetKit.framework

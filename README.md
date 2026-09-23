@@ -1,15 +1,18 @@
-# CallTimer - Ứng dụng Nhắc nhở Thời lượng Cuộc gọi cho iPhone (Dynamic Island & Live Activity)
+# CallTimer: nhắc thời lượng cuộc gọi theo từng SIM cho iPhone (Dynamic Island & Live Activity)
 
-Ứng dụng iOS hỗ trợ quản lý và đếm ngược thời gian gọi cho từng eSIM (eSIM 1 & eSIM 2) trên iPhone 15 Pro Max.
+Ứng dụng iOS 17+ cho phép đặt mốc thời gian gọi tối đa riêng cho từng SIM/eSIM (2 SIM trở lên), đếm ngược trên Dynamic Island và Màn hình khóa, rồi cảnh báo bằng chuông và rung trước khi chạm mốc.
 
 ## Tính năng
-- ⏱️ Cấu hình thời gian tối đa cho eSIM 1 và eSIM 2.
-- 🏝️ Hiển thị đếm ngược thời gian thực trên **Dynamic Island** & Lock Screen.
-- 🔔 Cảnh báo rung & phát âm thanh khi còn 30 giây và khi chạm mốc giới hạn.
-- 📱 Icon hiển thị chuẩn Retina 1024x1024 trên Thư viện ứng dụng iOS.
+- ⏱️ Mốc phút/giây riêng cho từng SIM. Có thể thêm, xóa và đổi tên SIM; cài đặt được lưu tự động bằng UserDefaults.
+- 🏝️ Đếm ngược thời gian thực trên **Dynamic Island** (dạng compact và expanded) và **Màn hình khóa**. Hệ thống tự đếm nên vẫn chạy khi app ở nền trong lúc gọi.
+- 🔔 **Cảnh báo vàng** trước N giây (mặc định 30, chỉnh được) và **cảnh báo đỏ** khi chạm mốc, dùng thông báo cục bộ nên hoạt động cả khi tắt màn hình.
+- 📞 Nhập số để vừa gọi (`tel:`) vừa đếm ngược.
+- 🌗 Giao diện dạng thẻ, tự đổi theo chế độ Sáng/Tối; icon 1024×1024.
 
-## Cấu trúc Dự án
-- `CallTimer/`: Mã nguồn SwiftUI (`ContentView`, `TimerManager`, `NotificationManager`, `CallTimerAttributes`, `CallTimerWidgetLiveActivity`).
-- `CallTimerApp.xcodeproj`: Dự án Xcode.
-- `.github/workflows/build_ios.yml`: Workflow biên dịch tự động `.ipa`.
-- `BUILD_GUIDE.md`: Hướng dẫn cài đặt lên iPhone từ Windows bằng Sideloadly / AltStore.
+## Cấu trúc
+- `CallTimer/`: app chính (`ContentView`, `TimerManager`, `NotificationManager`, `Info.plist`, `Assets.xcassets`).
+- `CallTimerWidget/`: Widget Extension hiển thị Live Activity trên Dynamic Island và Màn hình khóa.
+- `Shared/CallTimerAttributes.swift`: dữ liệu Live Activity, dùng chung cho cả 2 target.
+- `project.yml`: cấu hình dự án XcodeGen; `CallTimerApp.xcodeproj` được tạo tự động từ file này.
+- `.github/workflows/build_ios.yml`: tự build `CallTimer.ipa` trên GitHub Actions.
+- `BUILD_GUIDE.md`: hướng dẫn cài lên iPhone từ Windows bằng Sideloadly.
